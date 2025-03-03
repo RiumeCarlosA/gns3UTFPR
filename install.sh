@@ -84,6 +84,9 @@ systemctl restart docker
 
 echo -e "3. Configurando e instalando o GNS3:"
 
+echo -e "\t - Adicionando repositório PPA do GNS3"
+sudo add-apt-repository -y ppa:gns3/ppa
+
 echo -e "\t - Instalando. "
 apt install -y gns3-server gns3-gui gns3-webclient-pack dynamips vpcs ubridge wireshark xfce4-terminal
 
